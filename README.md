@@ -18,20 +18,6 @@ Please note that version 4.0.0 is in the works, and is considered a breaking cha
 
 Take a look at the "development" branch to see what's up.
 
-## Installation & loading
-
-CodeIgniter Rest Server is available on [Packagist](https://packagist.org/packages/chriskacerguis/codeigniter-restserver) (using semantic versioning), and installation via composer is the recommended way to install Codeigniter Rest Server. Just add this line to your `composer.json` file:
-
-```json
-"chriskacerguis/codeigniter-restserver": "^3.0"
-```
-
-or run
-
-```sh
-composer require chriskacerguis/codeigniter-restserver
-```
-
 ## Handling Requests
 
 When your controller extends from `REST_Controller`, the method names will be appended with the HTTP method used to access the request. If you're  making an HTTP `GET` call to `/books`, for instance, it would call a `Books#index_get()` method.
