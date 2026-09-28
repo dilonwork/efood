@@ -116,11 +116,7 @@ class UserFood extends REST_Controller
         $this->set_response($message, REST_Controller::HTTP_OK);   
     }
     /*
-	public function li$message = 
-            [
-                'result'=> 1, //token 驗證成功
-                'data' => $this->restaurantFood->getRestaurantFoods($this->post('restaurantId'))          
-            ];st_post()
+	public function list_post()
 	{
 
 		$token = $this->getBearerToken();		
