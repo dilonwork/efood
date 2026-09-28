@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" font-family="sans-serif">
+  <rect x="0" y="0" width="720" height="320" fill="#f7f7f7"/>
+  <text x="360" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">efood — system architecture</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- clients -->
+  <rect x="20" y="90" width="150" height="160" rx="10" fill="#e8f4e8" stroke="#5a9e5a" stroke-width="2"/>
+  <text x="95" y="118" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Clients</text>
+  <text x="95" y="142" text-anchor="middle" font-size="13" fill="#555">Mobile app / web</text>
+  <text x="95" y="162" text-anchor="middle" font-size="13" fill="#555">REST calls</text>
+  <text x="95" y="182" text-anchor="middle" font-size="13" fill="#555">(JSON)</text>
+  <text x="95" y="222" text-anchor="middle" font-size="13" fill="#555">Browser →</text>
+  <text x="95" y="240" text-anchor="middle" font-size="13" fill="#555">site/console</text>
+
+  <!-- CI app -->
+  <rect x="230" y="70" width="270" height="200" rx="10" fill="#e8ecf7" stroke="#5a6e9e" stroke-width="2"/>
+  <text x="365" y="98" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">CodeIgniter 3 (PHP)</text>
+  <text x="365" y="120" text-anchor="middle" font-size="13" fill="#555">index.php — front controller</text>
+  <rect x="245" y="132" width="240" height="52" rx="6" fill="#ffffff" stroke="#5a6e9e"/>
+  <text x="365" y="152" text-anchor="middle" font-size="13" fill="#333">api/* — REST_Controller</text>
+  <text x="365" y="170" text-anchor="middle" font-size="12" fill="#666">Account · Diary · Restaurant</text>
+  <text x="365" y="184" text-anchor="middle" font-size="12" fill="#666" dy="0">FoodMaterial · UserFood · Note</text>
+  <rect x="245" y="196" width="240" height="60" rx="6" fill="#ffffff" stroke="#5a6e9e"/>
+  <text x="365" y="216" text-anchor="middle" font-size="13" fill="#333">site/console + upload.php</text>
+  <text x="365" y="234" text-anchor="middle" font-size="12" fill="#666">session admin UI · image upload</text>
+
+  <!-- db -->
+  <rect x="560" y="110" width="140" height="120" rx="10" fill="#f7e8e8" stroke="#9e5a5a" stroke-width="2"/>
+  <text x="630" y="138" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">MySQL</text>
+  <text x="630" y="160" text-anchor="middle" font-size="13" fill="#555">database: efood</text>
+  <text x="630" y="180" text-anchor="middle" font-size="13" fill="#555">via models/</text>
+  <text x="630" y="200" text-anchor="middle" font-size="13" fill="#555">error codes:</text>
+  <text x="630" y="216" text-anchor="middle" font-size="13" fill="#555">ErrorCode.txt</text>
+
+  <!-- arrows -->
+  <line x1="170" y1="150" x2="228" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="170" y1="220" x2="228" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="500" y1="170" x2="558" y2="170" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="360" y="300" text-anchor="middle" font-size="12" fill="#888">REST verb-suffix routing (login_post → POST api/account/login) · JSON responses</text>
+</svg>
